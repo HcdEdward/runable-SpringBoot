@@ -7,12 +7,12 @@ spring:
     suffix: .html
     mode: HTML5
     encoding: UTF-8
-#    ÉèÖÃ»º´æÎªfalse ÎªÁËÈÈ²¿Êğ host refresh
+#    è®¾ç½®ç¼“å­˜ä¸ºfalse ä¸ºäº†çƒ­éƒ¨ç½² host refresh
     cache: false
-#    ÉèÖÃfreemarker
+#    è®¾ç½®freemarker
   freemarker:
     allow-request-override: false
-#    ¿ª·¢¹ı³Ì½¨Òé¹Ø±Õ»º´æ
+#    å¼€å‘è¿‡ç¨‹å»ºè®®å…³é—­ç¼“å­˜
     cache: false
     check-template-location: false
     charset: UTF-8
@@ -23,14 +23,21 @@ spring:
 #    prefix: xx
     request-context-attribute:
 #    settings:
-# Ä¬ÈÏºó×º¾ÍÊÇ.ftl
+# é»˜è®¤åç¼€å°±æ˜¯.ftl
 #    suffix: .ftl
 #    template-loader-path: classPath:/templates/
 #    view-names:
 
-#ÈÈ²¿ÊğÉúĞ§
+#çƒ­éƒ¨ç½²ç”Ÿæ•ˆ
 spring.devtools.restart.enabled: true
-#ÉèÖÃÖØÆôµÄÄ¿Â¼
+#è®¾ç½®é‡å¯çš„ç›®å½•
 #spring.devtools.restart.additional-paths: src/main/java
-#classpathÄ¿Â¼ÏÂµÄWEB-INFÎÄ¼ş¼ĞÄÚÈİĞŞ¸Ä²»ÖØÆô
+#classpathç›®å½•ä¸‹çš„WEB-INFæ–‡ä»¶å¤¹å†…å®¹ä¿®æ”¹ä¸é‡å¯
 spring.devtools.restart.exclude: resources/**
+
+#é…ç½®è¿”å›jsp start
+# é…ç½®jspæ–‡ä»¶çš„ä½ç½®ï¼Œé»˜è®¤ä½ç½®ä¸ºï¼šsrc/main/webapp
+spring.mvc.view.prefix: /templates/
+# é…ç½®jspæ–‡ä»¶çš„åç¼€
+spring.mvc.view.suffix: .jsp
+#é…ç½®è¿”å›jsp end
