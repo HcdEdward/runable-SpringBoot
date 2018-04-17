@@ -72,7 +72,7 @@
 		<!-- 使用freemaker模板 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+			<artifactId>spring-boot-starter-freemarker</artifactId>
 		</dependency>
 		<!-- 使用thymeleaf模板  -->
 		<dependency>
