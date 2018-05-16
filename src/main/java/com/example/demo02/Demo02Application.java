@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 import org.springframework.context.annotation.ComponentScan;
 
 
-@SpringBootApplication(exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class})
+@SpringBootApplication()
 @ComponentScan("com.example.*")
 public class Demo02Application {
-
+//exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class}
 	public static void main(String[] args) {
 		SpringApplication.run(Demo02Application.class, args);
 	}
