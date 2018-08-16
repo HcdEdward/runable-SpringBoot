@@ -32,12 +32,12 @@ mybatis:
     suffix: .html
     mode: HTML5
     encoding: UTF-8
-#    设置缓存为false 为了热部署 host refresh
+  # 设置缓存为false 为了热部署 host refresh
     cache: false
-#    设置freemarker
+  # 设置freemarker
   freemarker:
     allow-request-override: false
-#    开发过程建议关闭缓存
+  #  开发过程建议关闭缓存
     cache: false
     check-template-location: false
     charset: UTF-8
@@ -45,7 +45,7 @@ mybatis:
     expose-request-attributes: false
     expose-session-attributes: false
     expose-spring-macro-helpers: false
-#    prefix: xx
+  # prefix: xx
     request-context-attribute:
 #    settings:
 # 默认后缀就是.ftl
